@@ -1,11 +1,14 @@
-import { defineConfig } from "@lovable.dev/vite-tanstack-config";
+import { defineConfig } from "vite";
+import { tanstackStart } from "@tanstack/react-start/plugin/vite";
+import tailwindcss from "@tailwindcss/vite";
+import tsConfigPaths from "vite-tsconfig-paths";
 
 export default defineConfig({
-  tanstackStart: {
-    server: { entry: "server" },
-  },
-  vite: {
-    // Required for GitHub Pages: assets are served from /rahul-portfolio/ sub-path
-    base: process.env.GITHUB_PAGES ? "/rahul-portfolio/" : "/",
-  },
+  plugins: [
+    tailwindcss(),
+    tsConfigPaths({ projects: ["./tsconfig.json"] }),
+    tanstackStart({
+      server: { entry: "server" },
+    }),
+  ],
 });
