@@ -1,9 +1,24 @@
 {
-  "outputDirectory": "dist",
-  "rewrites": [
+  "buildCommand": "npm run build",
+  "outputDirectory": "dist/client",
+  "framework": null,
+  "functions": {
+    "api/ssr.js": {
+      "includeFiles": "dist/**"
+    }
+  },
+  "routes": [
     {
-      "source": "/(.*)",
-      "destination": "/index.html"
+      "src": "^/assets/(.*)$",
+      "dest": "/assets/$1"
+    },
+    {
+      "src": "^/(.*)\\.(js|css|png|jpg|jpeg|svg|ico|webp|woff|woff2|ttf|pdf|txt|map)$",
+      "dest": "/$1.$2"
+    },
+    {
+      "src": "/(.*)",
+      "dest": "/api/ssr"
     }
   ]
 }
