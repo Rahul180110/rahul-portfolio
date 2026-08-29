@@ -201,20 +201,25 @@ export function Hero() {
               </div>
 
               <div className="flex flex-col items-center text-center">
-                <div className="relative grid h-28 w-28 place-items-center">
+                <div className="relative grid h-32 w-32 place-items-center">
                   <div
                     aria-hidden
-                    className="absolute inset-0 rounded-full"
+                    className="absolute -inset-1 rounded-full"
                     style={{
                       background: "conic-gradient(from 0deg,#a855f7,#22d3ee,#ec4899,#a855f7)",
                       animation: "spin-slow 8s linear infinite",
+                      filter: "blur(2px)",
                     }}
                   />
                   <div
-                    className="relative grid h-[6.25rem] w-[6.25rem] place-items-center rounded-full font-display text-3xl font-bold text-white"
+                    className="relative h-[7.5rem] w-[7.5rem] overflow-hidden rounded-full p-0.5"
                     style={{ backgroundColor: "#0c0919" }}
                   >
-                    RR
+                    <img
+                      src="/logo.jpg"
+                      alt="Rahul R Emblem"
+                      className="h-full w-full rounded-full object-cover shadow-[0_0_25px_rgba(168,85,247,0.5)]"
+                    />
                   </div>
                 </div>
                 <p className="mt-5 font-display text-2xl font-bold text-white">Rahul R</p>

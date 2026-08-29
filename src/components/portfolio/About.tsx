@@ -19,13 +19,14 @@ export function About() {
               }}
             />
             <div
-              className="relative grid h-56 w-56 place-items-center rounded-full sm:h-72 sm:w-72"
+              className="relative h-56 w-56 overflow-hidden rounded-full p-2 sm:h-72 sm:w-72"
               style={{ backgroundColor: "#0a0a0f" }}
             >
-              <div className="text-center">
-                <p className="gradient-text font-display text-6xl font-bold sm:text-7xl">RR</p>
-                <p className="mono-label mt-2 text-white/40">Chennai, TN</p>
-              </div>
+              <img
+                src="/logo.jpg"
+                alt="Rahul R Personal Emblem"
+                className="h-full w-full rounded-full object-cover shadow-[0_0_35px_rgba(168,85,247,0.4)]"
+              />
             </div>
 
             <motion.div

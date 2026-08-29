@@ -14,7 +14,12 @@ export function Footer() {
       <div className="mx-auto w-full max-w-6xl px-5 py-14 sm:px-8">
         <div className="grid grid-cols-1 gap-10 sm:grid-cols-3">
           <div>
-            <p className="shimmer-text font-display text-xl font-bold">Rahul R</p>
+            <div className="flex items-center gap-3">
+              <div className="h-8 w-8 overflow-hidden rounded-lg border border-purple-500/30 shadow-[0_0_12px_rgba(168,85,247,0.35)]">
+                <img src="/logo.jpg" alt="Rahul R Logo" className="h-full w-full object-cover" />
+              </div>
+              <p className="shimmer-text font-display text-xl font-bold">Rahul R</p>
+            </div>
             <p className="mono-label mt-3 text-white/45">Full Stack Developer · Chennai</p>
           </div>
 

@@ -47,9 +47,18 @@ export function Nav() {
           <button
             type="button"
             onClick={() => window.scrollTo({ top: 0, behavior: "smooth" })}
-            className="shimmer-text font-display text-lg font-bold tracking-tight"
+            className="group flex items-center gap-2.5"
           >
-            Rahul R
+            <div className="relative grid h-8 w-8 place-items-center overflow-hidden rounded-lg border border-purple-500/30 bg-purple-500/10 shadow-[0_0_12px_rgba(168,85,247,0.35)] transition-transform duration-300 group-hover:scale-105 group-hover:border-purple-400/60">
+              <img
+                src="/logo.jpg"
+                alt="Rahul R"
+                className="h-full w-full object-cover"
+              />
+            </div>
+            <span className="shimmer-text font-display text-lg font-bold tracking-tight">
+              Rahul R
+            </span>
           </button>
 
           <div className="hidden items-center gap-7 lg:flex">
