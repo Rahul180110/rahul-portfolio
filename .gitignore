@@ -33,4 +33,4 @@ dist-ssr
 .workspace/
 
 # Root loose pdf uploads (organized in public/)
-/*.pdf
+
