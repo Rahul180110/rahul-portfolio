@@ -132,7 +132,9 @@ export function Hero() {
             </button>
             <a
               href="/resume.pdf"
-              download
+              target="_blank"
+              rel="noreferrer"
+              download="Rahul_R_Resume.pdf"
               className="inline-flex items-center gap-2 rounded-xl px-6 py-3.5 font-semibold text-white/85 transition-colors hover:text-white"
               style={{ border: "1px solid rgba(255,255,255,0.16)" }}
             >

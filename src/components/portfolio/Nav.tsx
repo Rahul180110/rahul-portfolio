@@ -68,7 +68,9 @@ export function Nav() {
           <div className="flex items-center gap-3">
             <a
               href="/resume.pdf"
-              download
+              target="_blank"
+              rel="noreferrer"
+              download="Rahul_R_Resume.pdf"
               className="hidden items-center gap-2 rounded-lg px-4 py-2 text-xs font-semibold text-white sm:inline-flex"
               style={{ backgroundImage: "linear-gradient(135deg,#a855f7,#22d3ee)" }}
             >
@@ -114,7 +116,9 @@ export function Nav() {
             </div>
             <a
               href="/resume.pdf"
-              download
+              target="_blank"
+              rel="noreferrer"
+              download="Rahul_R_Resume.pdf"
               className="inline-flex items-center justify-center gap-2 rounded-xl py-4 font-semibold text-white"
               style={{ backgroundImage: "linear-gradient(135deg,#a855f7,#22d3ee)" }}
             >

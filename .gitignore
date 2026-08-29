@@ -30,3 +30,7 @@ dist-ssr
 *.njsproj
 *.sln
 *.sw?
+.workspace/
+
+# Root loose pdf uploads (organized in public/)
+/*.pdf

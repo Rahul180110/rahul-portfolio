@@ -53,11 +53,10 @@ export function Footer() {
         </div>
 
         <div
-          className="mt-12 flex flex-col gap-3 pt-6 sm:flex-row sm:items-center sm:justify-between"
+          className="mt-12 flex items-center justify-center pt-6 text-center"
           style={{ borderTop: "1px solid rgba(255,255,255,0.08)" }}
         >
           <p className="mono-label text-white/35">© 2026 Rahul R. All rights reserved.</p>
-          <p className="mono-label text-white/35">Built with ❤️ using React + Framer Motion</p>
         </div>
       </div>
     </footer>
